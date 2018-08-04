@@ -57,20 +57,12 @@ header h2 {
 /* sectionのclass about */
 
 .about {
-  background: url(app_background.png);/* 背景色を指定する */
+  background: #555 url(app_background.png);/* 背景色を指定する */
+    background-blend-mode: multiply;
     background-size: 1000px;
     background-position: center;
   text-align: center;
     height: 390px;
-}
-.about::before {
-    content:'';
-    background-color: rgba(0,0, 0, 0.6);
-    position: absolute;
-    top: 0;
-    left:0;
-    bottom: 0;
-    right: 0;
 }
 
 .about h2 {
@@ -89,23 +81,20 @@ header h2 {
   margin: 20px auto;
     font-size: 25px;
     padding: 30px;
-    padding-top: 100px;
     color: #dddddd;
     
 }
 
-
-.box {
-    position: absolute;
-    width: 100%;
-    
+.container {
+    width:1018px;
+    margin: 0 auto;
 }
-
 
 /* sectionのclass photo */
 
 .introduction {
     height: 700px;
+    background-color: #eeeeee;
 }
 
 .title {
@@ -120,7 +109,7 @@ header h2 {
     height: 100px;
     transform: rotate(5deg);
     position: absolute;
-    padding-left: 230px;
+    padding-left: 250px;
     float: left;
 }
 
@@ -139,9 +128,27 @@ header h2 {
 
 .introduction p {
     font-size: 25px;
-    max-width: ; 
-    padding: 20px;
     float: left;
+    margin: 40px;
+}
+
+
+.link {
+    height: 30px;
+    color: #bbbbbb;
+    padding: 5px;
+    padding-left: 50x;
+}
+
+.link img {
+    height:25px;
+    float: left;
+}
+
+.link p {
+    font-size: 20px;
+    color: black;
+    margin-left: 30px;
 }
 
 /* footerはここ */
